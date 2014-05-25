@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0354F57379D74201A497DA13 /* libPods-JVEReactiveItemDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42939FDCCFDE4FC0A4A854E1 /* libPods-JVEReactiveItemDownloader.a */; };
+		8E8B62C619329AB300F86215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C519329AB300F86215 /* Foundation.framework */; };
+		8E8B62C819329AB300F86215 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C719329AB300F86215 /* CoreGraphics.framework */; };
+		8E8B62CA19329AB300F86215 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C919329AB300F86215 /* UIKit.framework */; };
+		8E8B62D019329AB300F86215 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B62CE19329AB300F86215 /* InfoPlist.strings */; };
+		8E8B62D219329AB300F86215 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B62D119329AB300F86215 /* main.m */; };
+		8E8B62D619329AB300F86215 /* JVEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B62D519329AB300F86215 /* JVEAppDelegate.m */; };
+		8E8B62D819329AB300F86215 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B62D719329AB300F86215 /* Images.xcassets */; };
+		8E8B62DF19329AB300F86215 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62DE19329AB300F86215 /* XCTest.framework */; };
+		8E8B62E019329AB300F86215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C519329AB300F86215 /* Foundation.framework */; };
+		8E8B62E119329AB300F86215 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C919329AB300F86215 /* UIKit.framework */; };
+		8E8B62E919329AB300F86215 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E8B62E719329AB300F86215 /* InfoPlist.strings */; };
+		8E8B62EB19329AB300F86215 /* JVEReactiveItemDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B62EA19329AB300F86215 /* JVEReactiveItemDownloaderTests.m */; };
+		8E8B62F619329D4100F86215 /* JVEMeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B62F519329D4100F86215 /* JVEMeal.m */; };
+		8E8B62FC19329DE900F86215 /* JVEMealProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B62FB19329DE900F86215 /* JVEMealProvider.m */; };
+		8E8B63001932A45F00F86215 /* JVEMealGalleryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B62FF1932A45F00F86215 /* JVEMealGalleryViewModel.m */; };
+		8E8B63051932A66100F86215 /* JVEMealGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B63041932A66100F86215 /* JVEMealGalleryViewController.m */; };
+		8E8B63091932A76800F86215 /* JVEMealGalleryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B63081932A76800F86215 /* JVEMealGalleryCell.m */; };
+		8E8B630C1932A90B00F86215 /* JVEMealGalleryFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8B630B1932A90B00F86215 /* JVEMealGalleryFlowLayout.m */; };
+		94F30891199E41B2BEA29BB6 /* libPods-JVEReactiveItemDownloaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A67965729D4E1E9BF16B49 /* libPods-JVEReactiveItemDownloaderTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E8B62E219329AB300F86215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E8B62BA19329AB300F86215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E8B62C119329AB300F86215;
+			remoteInfo = JVEReactiveItemDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42939FDCCFDE4FC0A4A854E1 /* libPods-JVEReactiveItemDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JVEReactiveItemDownloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A846E8AC4B04F1B97DE5AE1 /* Pods-JVEReactiveItemDownloaderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVEReactiveItemDownloaderTests.xcconfig"; path = "Pods/Pods-JVEReactiveItemDownloaderTests.xcconfig"; sourceTree = "<group>"; };
+		85A67965729D4E1E9BF16B49 /* libPods-JVEReactiveItemDownloaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JVEReactiveItemDownloaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8B62C219329AB300F86215 /* JVEReactiveItemDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JVEReactiveItemDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8B62C519329AB300F86215 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E8B62C719329AB300F86215 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E8B62C919329AB300F86215 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E8B62CD19329AB300F86215 /* JVEReactiveItemDownloader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JVEReactiveItemDownloader-Info.plist"; sourceTree = "<group>"; };
+		8E8B62CF19329AB300F86215 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E8B62D119329AB300F86215 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E8B62D319329AB300F86215 /* JVEReactiveItemDownloader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JVEReactiveItemDownloader-Prefix.pch"; sourceTree = "<group>"; };
+		8E8B62D419329AB300F86215 /* JVEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JVEAppDelegate.h; sourceTree = "<group>"; };
+		8E8B62D519329AB300F86215 /* JVEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JVEAppDelegate.m; sourceTree = "<group>"; };
+		8E8B62D719329AB300F86215 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8E8B62DD19329AB300F86215 /* JVEReactiveItemDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JVEReactiveItemDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E8B62DE19329AB300F86215 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8E8B62E619329AB300F86215 /* JVEReactiveItemDownloaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JVEReactiveItemDownloaderTests-Info.plist"; sourceTree = "<group>"; };
+		8E8B62E819329AB300F86215 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E8B62EA19329AB300F86215 /* JVEReactiveItemDownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JVEReactiveItemDownloaderTests.m; sourceTree = "<group>"; };
+		8E8B62F419329D4100F86215 /* JVEMeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEMeal.h; sourceTree = "<group>"; };
+		8E8B62F519329D4100F86215 /* JVEMeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMeal.m; sourceTree = "<group>"; };
+		8E8B62FA19329DE900F86215 /* JVEMealProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEMealProvider.h; sourceTree = "<group>"; };
+		8E8B62FB19329DE900F86215 /* JVEMealProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMealProvider.m; sourceTree = "<group>"; };
+		8E8B62FE1932A45F00F86215 /* JVEMealGalleryViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEMealGalleryViewModel.h; sourceTree = "<group>"; };
+		8E8B62FF1932A45F00F86215 /* JVEMealGalleryViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMealGalleryViewModel.m; sourceTree = "<group>"; };
+		8E8B63031932A66100F86215 /* JVEMealGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEMealGalleryViewController.h; sourceTree = "<group>"; };
+		8E8B63041932A66100F86215 /* JVEMealGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMealGalleryViewController.m; sourceTree = "<group>"; };
+		8E8B63071932A76800F86215 /* JVEMealGalleryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEMealGalleryCell.h; sourceTree = "<group>"; };
+		8E8B63081932A76800F86215 /* JVEMealGalleryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMealGalleryCell.m; sourceTree = "<group>"; };
+		8E8B630A1932A90B00F86215 /* JVEMealGalleryFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEMealGalleryFlowLayout.h; sourceTree = "<group>"; };
+		8E8B630B1932A90B00F86215 /* JVEMealGalleryFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMealGalleryFlowLayout.m; sourceTree = "<group>"; };
+		D37B2804A90A4C80880F7A48 /* Pods-JVEReactiveItemDownloader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVEReactiveItemDownloader.xcconfig"; path = "Pods/Pods-JVEReactiveItemDownloader.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E8B62BF19329AB300F86215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8B62C819329AB300F86215 /* CoreGraphics.framework in Frameworks */,
+				8E8B62CA19329AB300F86215 /* UIKit.framework in Frameworks */,
+				8E8B62C619329AB300F86215 /* Foundation.framework in Frameworks */,
+				0354F57379D74201A497DA13 /* libPods-JVEReactiveItemDownloader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8B62DA19329AB300F86215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8B62DF19329AB300F86215 /* XCTest.framework in Frameworks */,
+				8E8B62E119329AB300F86215 /* UIKit.framework in Frameworks */,
+				8E8B62E019329AB300F86215 /* Foundation.framework in Frameworks */,
+				94F30891199E41B2BEA29BB6 /* libPods-JVEReactiveItemDownloaderTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E8B62B919329AB300F86215 = {
+			isa = PBXGroup;
+			children = (
+				8E8B62CB19329AB300F86215 /* JVEReactiveItemDownloader */,
+				8E8B62E419329AB300F86215 /* JVEReactiveItemDownloaderTests */,
+				8E8B62C419329AB300F86215 /* Frameworks */,
+				8E8B62C319329AB300F86215 /* Products */,
+				D37B2804A90A4C80880F7A48 /* Pods-JVEReactiveItemDownloader.xcconfig */,
+				7A846E8AC4B04F1B97DE5AE1 /* Pods-JVEReactiveItemDownloaderTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		8E8B62C319329AB300F86215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B62C219329AB300F86215 /* JVEReactiveItemDownloader.app */,
+				8E8B62DD19329AB300F86215 /* JVEReactiveItemDownloaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E8B62C419329AB300F86215 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B62C519329AB300F86215 /* Foundation.framework */,
+				8E8B62C719329AB300F86215 /* CoreGraphics.framework */,
+				8E8B62C919329AB300F86215 /* UIKit.framework */,
+				8E8B62DE19329AB300F86215 /* XCTest.framework */,
+				42939FDCCFDE4FC0A4A854E1 /* libPods-JVEReactiveItemDownloader.a */,
+				85A67965729D4E1E9BF16B49 /* libPods-JVEReactiveItemDownloaderTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E8B62CB19329AB300F86215 /* JVEReactiveItemDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B630E1932B2CF00F86215 /* Model */,
+				8E8B630D1932B2C500F86215 /* ViewModel */,
+				8E8B63061932A75800F86215 /* View */,
+				8E8B62F919329D8400F86215 /* App sources */,
+			);
+			path = JVEReactiveItemDownloader;
+			sourceTree = "<group>";
+		};
+		8E8B62CC19329AB300F86215 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B62CD19329AB300F86215 /* JVEReactiveItemDownloader-Info.plist */,
+				8E8B62CE19329AB300F86215 /* InfoPlist.strings */,
+				8E8B62D119329AB300F86215 /* main.m */,
+				8E8B62D319329AB300F86215 /* JVEReactiveItemDownloader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E8B62E419329AB300F86215 /* JVEReactiveItemDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B62EA19329AB300F86215 /* JVEReactiveItemDownloaderTests.m */,
+				8E8B62E519329AB300F86215 /* Supporting Files */,
+			);
+			path = JVEReactiveItemDownloaderTests;
+			sourceTree = "<group>";
+		};
+		8E8B62E519329AB300F86215 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B62E619329AB300F86215 /* JVEReactiveItemDownloaderTests-Info.plist */,
+				8E8B62E719329AB300F86215 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E8B62F919329D8400F86215 /* App sources */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B62D719329AB300F86215 /* Images.xcassets */,
+				8E8B62CC19329AB300F86215 /* Supporting Files */,
+				8E8B62D419329AB300F86215 /* JVEAppDelegate.h */,
+				8E8B62D519329AB300F86215 /* JVEAppDelegate.m */,
+			);
+			name = "App sources";
+			sourceTree = "<group>";
+		};
+		8E8B63061932A75800F86215 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B63031932A66100F86215 /* JVEMealGalleryViewController.h */,
+				8E8B63041932A66100F86215 /* JVEMealGalleryViewController.m */,
+				8E8B630A1932A90B00F86215 /* JVEMealGalleryFlowLayout.h */,
+				8E8B630B1932A90B00F86215 /* JVEMealGalleryFlowLayout.m */,
+				8E8B63071932A76800F86215 /* JVEMealGalleryCell.h */,
+				8E8B63081932A76800F86215 /* JVEMealGalleryCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8E8B630D1932B2C500F86215 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B62FE1932A45F00F86215 /* JVEMealGalleryViewModel.h */,
+				8E8B62FF1932A45F00F86215 /* JVEMealGalleryViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E8B630E1932B2CF00F86215 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B62F419329D4100F86215 /* JVEMeal.h */,
+				8E8B62F519329D4100F86215 /* JVEMeal.m */,
+				8E8B62FA19329DE900F86215 /* JVEMealProvider.h */,
+				8E8B62FB19329DE900F86215 /* JVEMealProvider.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E8B62C119329AB300F86215 /* JVEReactiveItemDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E8B62EE19329AB300F86215 /* Build configuration list for PBXNativeTarget "JVEReactiveItemDownloader" */;
+			buildPhases = (
+				24DFE9F2075E459A97EF0EA6 /* Check Pods Manifest.lock */,
+				8E8B62BE19329AB300F86215 /* Sources */,
+				8E8B62BF19329AB300F86215 /* Frameworks */,
+				8E8B62C019329AB300F86215 /* Resources */,
+				806A88D7454D40C6A6FF6D67 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JVEReactiveItemDownloader;
+			productName = JVEReactiveItemDownloader;
+			productReference = 8E8B62C219329AB300F86215 /* JVEReactiveItemDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E8B62DC19329AB300F86215 /* JVEReactiveItemDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E8B62F119329AB300F86215 /* Build configuration list for PBXNativeTarget "JVEReactiveItemDownloaderTests" */;
+			buildPhases = (
+				4BAD83122D6D4DD19C63F363 /* Check Pods Manifest.lock */,
+				8E8B62D919329AB300F86215 /* Sources */,
+				8E8B62DA19329AB300F86215 /* Frameworks */,
+				8E8B62DB19329AB300F86215 /* Resources */,
+				A84465A16E4B4EC5866E60B5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E8B62E319329AB300F86215 /* PBXTargetDependency */,
+			);
+			name = JVEReactiveItemDownloaderTests;
+			productName = JVEReactiveItemDownloaderTests;
+			productReference = 8E8B62DD19329AB300F86215 /* JVEReactiveItemDownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E8B62BA19329AB300F86215 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JVE;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					8E8B62DC19329AB300F86215 = {
+						TestTargetID = 8E8B62C119329AB300F86215;
+					};
+				};
+			};
+			buildConfigurationList = 8E8B62BD19329AB300F86215 /* Build configuration list for PBXProject "JVEReactiveItemDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E8B62B919329AB300F86215;
+			productRefGroup = 8E8B62C319329AB300F86215 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E8B62C119329AB300F86215 /* JVEReactiveItemDownloader */,
+				8E8B62DC19329AB300F86215 /* JVEReactiveItemDownloaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E8B62C019329AB300F86215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8B62D019329AB300F86215 /* InfoPlist.strings in Resources */,
+				8E8B62D819329AB300F86215 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8B62DB19329AB300F86215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8B62E919329AB300F86215 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24DFE9F2075E459A97EF0EA6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4BAD83122D6D4DD19C63F363 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		806A88D7454D40C6A6FF6D67 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-JVEReactiveItemDownloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A84465A16E4B4EC5866E60B5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-JVEReactiveItemDownloaderTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E8B62BE19329AB300F86215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8B63051932A66100F86215 /* JVEMealGalleryViewController.m in Sources */,
+				8E8B63091932A76800F86215 /* JVEMealGalleryCell.m in Sources */,
+				8E8B62D619329AB300F86215 /* JVEAppDelegate.m in Sources */,
+				8E8B63001932A45F00F86215 /* JVEMealGalleryViewModel.m in Sources */,
+				8E8B62D219329AB300F86215 /* main.m in Sources */,
+				8E8B62F619329D4100F86215 /* JVEMeal.m in Sources */,
+				8E8B62FC19329DE900F86215 /* JVEMealProvider.m in Sources */,
+				8E8B630C1932A90B00F86215 /* JVEMealGalleryFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E8B62D919329AB300F86215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8B62EB19329AB300F86215 /* JVEReactiveItemDownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E8B62E319329AB300F86215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E8B62C119329AB300F86215 /* JVEReactiveItemDownloader */;
+			targetProxy = 8E8B62E219329AB300F86215 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E8B62CE19329AB300F86215 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E8B62CF19329AB300F86215 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8E8B62E719329AB300F86215 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E8B62E819329AB300F86215 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E8B62EC19329AB300F86215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E8B62ED19329AB300F86215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E8B62EF19329AB300F86215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D37B2804A90A4C80880F7A48 /* Pods-JVEReactiveItemDownloader.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JVEReactiveItemDownloader/JVEReactiveItemDownloader-Prefix.pch";
+				INFOPLIST_FILE = "JVEReactiveItemDownloader/JVEReactiveItemDownloader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E8B62F019329AB300F86215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D37B2804A90A4C80880F7A48 /* Pods-JVEReactiveItemDownloader.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JVEReactiveItemDownloader/JVEReactiveItemDownloader-Prefix.pch";
+				INFOPLIST_FILE = "JVEReactiveItemDownloader/JVEReactiveItemDownloader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8E8B62F219329AB300F86215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A846E8AC4B04F1B97DE5AE1 /* Pods-JVEReactiveItemDownloaderTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JVEReactiveItemDownloader.app/JVEReactiveItemDownloader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JVEReactiveItemDownloader/JVEReactiveItemDownloader-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JVEReactiveItemDownloaderTests/JVEReactiveItemDownloaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8E8B62F319329AB300F86215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A846E8AC4B04F1B97DE5AE1 /* Pods-JVEReactiveItemDownloaderTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JVEReactiveItemDownloader.app/JVEReactiveItemDownloader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JVEReactiveItemDownloader/JVEReactiveItemDownloader-Prefix.pch";
+				INFOPLIST_FILE = "JVEReactiveItemDownloaderTests/JVEReactiveItemDownloaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E8B62BD19329AB300F86215 /* Build configuration list for PBXProject "JVEReactiveItemDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E8B62EC19329AB300F86215 /* Debug */,
+				8E8B62ED19329AB300F86215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E8B62EE19329AB300F86215 /* Build configuration list for PBXNativeTarget "JVEReactiveItemDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E8B62EF19329AB300F86215 /* Debug */,
+				8E8B62F019329AB300F86215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E8B62F119329AB300F86215 /* Build configuration list for PBXNativeTarget "JVEReactiveItemDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E8B62F219329AB300F86215 /* Debug */,
+				8E8B62F319329AB300F86215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E8B62BA19329AB300F86215 /* Project object */;
+}
