@@ -12,12 +12,14 @@
 #import "JVEMealGalleryCell.h"
 #import "JVEDetailViewController.h"
 #import "JVEDetailViewModel.h"
+#import "JVEMealListFlowLayout.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface JVEMealGalleryViewController ()
 
 @property (nonatomic, strong) JVEMealGalleryViewModel *viewModel;
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
+@property (nonatomic, assign) BOOL viewMode;
 
 @end
 
@@ -51,10 +53,31 @@ static NSString *CellIdentifier = @"Cell";
         NSIndexPath *indexPath = arguments.second;
         JVEDetailViewModel *viewModel = [[JVEDetailViewModel alloc] initWithModel:strongSelf.viewModel.model[indexPath.item]];
         JVEDetailViewController *viewController = [[JVEDetailViewController alloc] initWithViewModel:viewModel];
-        [self.navigationController pushViewController:viewController animated:YES];
+        [strongSelf.navigationController pushViewController:viewController animated:YES];
     }];
     
     self.collectionView.delegate = self;
+    
+    UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] init];
+    rightBarButton.title = @"Switch";
+    rightBarButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        __strong JVEMealGalleryViewController *strongSelf = weakSelf;
+        strongSelf.viewMode = !strongSelf.viewMode;
+        return [RACSignal empty];
+    }];
+    
+    self.navigationItem.rightBarButtonItem = rightBarButton;
+    
+    [RACObserve(weakSelf, viewMode) subscribeNext:^(id x) {
+        __strong JVEMealGalleryViewController *strongSelf = weakSelf;
+        UICollectionViewLayout *layout;
+        if ([x boolValue]) {
+            layout = [[JVEMealListFlowLayout alloc] init];
+        } else {
+            layout = [[JVEMealGalleryFlowLayout alloc] init];
+        }
+        [strongSelf.collectionView setCollectionViewLayout:layout animated:YES];
+    }];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -67,5 +90,7 @@ static NSString *CellIdentifier = @"Cell";
     
     return cell;
 }
+
+
 
 @end

@@ -10,6 +10,7 @@
 		0354F57379D74201A497DA13 /* libPods-JVEReactiveItemDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42939FDCCFDE4FC0A4A854E1 /* libPods-JVEReactiveItemDownloader.a */; };
 		8E05C9CF193349E00015ADA6 /* JVEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */; };
 		8E05C9D219334A4D0015ADA6 /* JVEDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9D119334A4D0015ADA6 /* JVEDetailViewModel.m */; };
+		8E05C9D51933735A0015ADA6 /* JVEMealListFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */; };
 		8E8B62C619329AB300F86215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C519329AB300F86215 /* Foundation.framework */; };
 		8E8B62C819329AB300F86215 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C719329AB300F86215 /* CoreGraphics.framework */; };
 		8E8B62CA19329AB300F86215 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C919329AB300F86215 /* UIKit.framework */; };
@@ -49,6 +50,8 @@
 		8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEDetailViewController.m; sourceTree = "<group>"; };
 		8E05C9D019334A4D0015ADA6 /* JVEDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEDetailViewModel.h; sourceTree = "<group>"; };
 		8E05C9D119334A4D0015ADA6 /* JVEDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEDetailViewModel.m; sourceTree = "<group>"; };
+		8E05C9D31933735A0015ADA6 /* JVEMealListFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEMealListFlowLayout.h; sourceTree = "<group>"; };
+		8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMealListFlowLayout.m; sourceTree = "<group>"; };
 		8E8B62C219329AB300F86215 /* JVEReactiveItemDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JVEReactiveItemDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8B62C519329AB300F86215 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E8B62C719329AB300F86215 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -202,6 +205,8 @@
 				8E8B630B1932A90B00F86215 /* JVEMealGalleryFlowLayout.m */,
 				8E8B63071932A76800F86215 /* JVEMealGalleryCell.h */,
 				8E8B63081932A76800F86215 /* JVEMealGalleryCell.m */,
+				8E05C9D31933735A0015ADA6 /* JVEMealListFlowLayout.h */,
+				8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 			files = (
 				8E8B63051932A66100F86215 /* JVEMealGalleryViewController.m in Sources */,
 				8E8B63091932A76800F86215 /* JVEMealGalleryCell.m in Sources */,
+				8E05C9D51933735A0015ADA6 /* JVEMealListFlowLayout.m in Sources */,
 				8E8B62D619329AB300F86215 /* JVEAppDelegate.m in Sources */,
 				8E8B63001932A45F00F86215 /* JVEMealGalleryViewModel.m in Sources */,
 				8E8B62D219329AB300F86215 /* main.m in Sources */,
