@@ -196,12 +196,12 @@
 			children = (
 				8E8B63031932A66100F86215 /* JVEMealGalleryViewController.h */,
 				8E8B63041932A66100F86215 /* JVEMealGalleryViewController.m */,
+				8E05C9CD193349E00015ADA6 /* JVEDetailViewController.h */,
+				8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */,
 				8E8B630A1932A90B00F86215 /* JVEMealGalleryFlowLayout.h */,
 				8E8B630B1932A90B00F86215 /* JVEMealGalleryFlowLayout.m */,
 				8E8B63071932A76800F86215 /* JVEMealGalleryCell.h */,
 				8E8B63081932A76800F86215 /* JVEMealGalleryCell.m */,
-				8E05C9CD193349E00015ADA6 /* JVEDetailViewController.h */,
-				8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";

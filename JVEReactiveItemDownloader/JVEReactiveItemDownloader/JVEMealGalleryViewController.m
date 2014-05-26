@@ -31,6 +31,7 @@ static NSString *CellIdentifier = @"Cell";
     if (self) {
         _viewModel = [[JVEMealGalleryViewModel alloc] init];
     }
+    
     return self;
 }
 
@@ -54,7 +55,6 @@ static NSString *CellIdentifier = @"Cell";
     }];
     
     self.collectionView.delegate = self;
-    
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
