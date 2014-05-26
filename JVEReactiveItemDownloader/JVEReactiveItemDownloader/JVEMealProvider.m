@@ -13,7 +13,7 @@
 @implementation JVEMealProvider
 
 static NSString *MealURL = @"http://verdant-upgrade-554.appspot.com/soservices/mealmanager";
-static NSString *MealImageURL = @"http://verdant-upgrade-554.appspot.com/soservices/mealimageservice?";
+static NSString *MealImageURL = @"http://verdant-upgrade-554.appspot.com/soservices/mealimageservice";
 
 
 + (RACSignal *)presentMeals {
@@ -41,11 +41,12 @@ static NSString *MealImageURL = @"http://verdant-upgrade-554.appspot.com/soservi
 + (void)configureMeal:(JVEMeal *)meal withDictionary:(NSDictionary *)dictionary {
     meal.name = dictionary[@"name"];
     meal.identifier = dictionary[@"identifier"];
+    meal.details = dictionary[@"description"];
     RAC(meal, imageData) = [self downloadImageForMeal:meal];
 }
 
 + (RACSignal *)downloadImageForMeal:(JVEMeal *)meal {
-    NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@identifier=%@",MealImageURL,meal.identifier]];
+    NSURL *imageURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@?identifier=%@",MealImageURL,meal.identifier]];
     NSURLRequest *request = [NSURLRequest requestWithURL:imageURL];
     
     return [[[NSURLConnection rac_sendAsynchronousRequest:request] reduceEach:^id(NSURLResponse *response, NSData *data) {

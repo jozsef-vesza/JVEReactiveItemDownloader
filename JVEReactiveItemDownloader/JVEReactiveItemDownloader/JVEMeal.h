@@ -13,5 +13,6 @@
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, assign) NSNumber *identifier;
 @property (nonatomic, strong) NSData *imageData;
+@property (nonatomic, copy) NSString *details;
 
 @end

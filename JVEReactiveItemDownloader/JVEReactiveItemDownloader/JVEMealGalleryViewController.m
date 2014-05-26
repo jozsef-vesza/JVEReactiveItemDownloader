@@ -10,11 +10,14 @@
 #import "JVEMealGalleryViewModel.h"
 #import "JVEMealGalleryFlowLayout.h"
 #import "JVEMealGalleryCell.h"
+#import "JVEDetailViewController.h"
+#import "JVEDetailViewModel.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface JVEMealGalleryViewController ()
 
 @property (nonatomic, strong) JVEMealGalleryViewModel *viewModel;
+@property (nonatomic, strong) NSIndexPath *selectedIndexPath;
 
 @end
 
@@ -41,6 +44,17 @@ static NSString *CellIdentifier = @"Cell";
         __strong JVEMealGalleryViewController *strongSelf = weakSelf;
         [strongSelf.collectionView reloadData];
     }];
+    
+    [[weakSelf rac_signalForSelector:@selector(collectionView:didSelectItemAtIndexPath:) fromProtocol:@protocol(UICollectionViewDelegate)] subscribeNext:^(RACTuple *arguments) {
+        __strong JVEMealGalleryViewController *strongSelf = weakSelf;
+        NSIndexPath *indexPath = arguments.second;
+        JVEDetailViewModel *viewModel = [[JVEDetailViewModel alloc] initWithModel:strongSelf.viewModel.model[indexPath.item]];
+        JVEDetailViewController *viewController = [[JVEDetailViewController alloc] initWithViewModel:viewModel];
+        [self.navigationController pushViewController:viewController animated:YES];
+    }];
+    
+    self.collectionView.delegate = self;
+    
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {

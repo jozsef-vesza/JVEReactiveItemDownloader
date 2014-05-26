@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0354F57379D74201A497DA13 /* libPods-JVEReactiveItemDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42939FDCCFDE4FC0A4A854E1 /* libPods-JVEReactiveItemDownloader.a */; };
+		8E05C9CF193349E00015ADA6 /* JVEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */; };
+		8E05C9D219334A4D0015ADA6 /* JVEDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9D119334A4D0015ADA6 /* JVEDetailViewModel.m */; };
 		8E8B62C619329AB300F86215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C519329AB300F86215 /* Foundation.framework */; };
 		8E8B62C819329AB300F86215 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C719329AB300F86215 /* CoreGraphics.framework */; };
 		8E8B62CA19329AB300F86215 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C919329AB300F86215 /* UIKit.framework */; };
@@ -43,6 +45,10 @@
 		42939FDCCFDE4FC0A4A854E1 /* libPods-JVEReactiveItemDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JVEReactiveItemDownloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A846E8AC4B04F1B97DE5AE1 /* Pods-JVEReactiveItemDownloaderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVEReactiveItemDownloaderTests.xcconfig"; path = "Pods/Pods-JVEReactiveItemDownloaderTests.xcconfig"; sourceTree = "<group>"; };
 		85A67965729D4E1E9BF16B49 /* libPods-JVEReactiveItemDownloaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JVEReactiveItemDownloaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E05C9CD193349E00015ADA6 /* JVEDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEDetailViewController.h; sourceTree = "<group>"; };
+		8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEDetailViewController.m; sourceTree = "<group>"; };
+		8E05C9D019334A4D0015ADA6 /* JVEDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEDetailViewModel.h; sourceTree = "<group>"; };
+		8E05C9D119334A4D0015ADA6 /* JVEDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEDetailViewModel.m; sourceTree = "<group>"; };
 		8E8B62C219329AB300F86215 /* JVEReactiveItemDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JVEReactiveItemDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8B62C519329AB300F86215 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E8B62C719329AB300F86215 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -194,6 +200,8 @@
 				8E8B630B1932A90B00F86215 /* JVEMealGalleryFlowLayout.m */,
 				8E8B63071932A76800F86215 /* JVEMealGalleryCell.h */,
 				8E8B63081932A76800F86215 /* JVEMealGalleryCell.m */,
+				8E05C9CD193349E00015ADA6 /* JVEDetailViewController.h */,
+				8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -203,6 +211,8 @@
 			children = (
 				8E8B62FE1932A45F00F86215 /* JVEMealGalleryViewModel.h */,
 				8E8B62FF1932A45F00F86215 /* JVEMealGalleryViewModel.m */,
+				8E05C9D019334A4D0015ADA6 /* JVEDetailViewModel.h */,
+				8E05C9D119334A4D0015ADA6 /* JVEDetailViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -387,7 +397,9 @@
 				8E8B62D219329AB300F86215 /* main.m in Sources */,
 				8E8B62F619329D4100F86215 /* JVEMeal.m in Sources */,
 				8E8B62FC19329DE900F86215 /* JVEMealProvider.m in Sources */,
+				8E05C9D219334A4D0015ADA6 /* JVEDetailViewModel.m in Sources */,
 				8E8B630C1932A90B00F86215 /* JVEMealGalleryFlowLayout.m in Sources */,
+				8E05C9CF193349E00015ADA6 /* JVEDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

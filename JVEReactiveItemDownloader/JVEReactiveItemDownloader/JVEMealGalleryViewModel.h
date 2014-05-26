@@ -10,6 +10,6 @@
 
 @interface JVEMealGalleryViewModel : RVMViewModel
 
-@property (nonatomic, readonly, strong) NSArray *model;
+@property (nonatomic, readonly, copy) NSArray *model;
 
 @end
