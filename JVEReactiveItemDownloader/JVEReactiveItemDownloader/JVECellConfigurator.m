@@ -7,7 +7,6 @@
 //
 
 #import "JVECellConfigurator.h"
-#import "JVRCellConfiguratorDelegate.h"
 #import "JVEMealGalleryCell.h"
 #import "JVEMeal.h"
 
