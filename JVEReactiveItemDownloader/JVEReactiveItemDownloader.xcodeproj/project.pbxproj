@@ -11,6 +11,8 @@
 		8E05C9CF193349E00015ADA6 /* JVEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */; };
 		8E05C9D219334A4D0015ADA6 /* JVEDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9D119334A4D0015ADA6 /* JVEDetailViewModel.m */; };
 		8E05C9D51933735A0015ADA6 /* JVEMealListFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */; };
+		8E05C9E11934BA050015ADA6 /* JVRCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9E01934BA050015ADA6 /* JVRCollectionViewDataSource.m */; };
+		8E05C9E51934C4CA0015ADA6 /* JVECellConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9E41934C4CA0015ADA6 /* JVECellConfigurator.m */; };
 		8E8B62C619329AB300F86215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C519329AB300F86215 /* Foundation.framework */; };
 		8E8B62C819329AB300F86215 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C719329AB300F86215 /* CoreGraphics.framework */; };
 		8E8B62CA19329AB300F86215 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C919329AB300F86215 /* UIKit.framework */; };
@@ -52,6 +54,11 @@
 		8E05C9D119334A4D0015ADA6 /* JVEDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEDetailViewModel.m; sourceTree = "<group>"; };
 		8E05C9D31933735A0015ADA6 /* JVEMealListFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEMealListFlowLayout.h; sourceTree = "<group>"; };
 		8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMealListFlowLayout.m; sourceTree = "<group>"; };
+		8E05C9DF1934BA050015ADA6 /* JVRCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRCollectionViewDataSource.h; sourceTree = "<group>"; };
+		8E05C9E01934BA050015ADA6 /* JVRCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVRCollectionViewDataSource.m; sourceTree = "<group>"; };
+		8E05C9E21934BA800015ADA6 /* JVRCellConfiguratorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JVRCellConfiguratorDelegate.h; sourceTree = "<group>"; };
+		8E05C9E31934C4CA0015ADA6 /* JVECellConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVECellConfigurator.h; sourceTree = "<group>"; };
+		8E05C9E41934C4CA0015ADA6 /* JVECellConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVECellConfigurator.m; sourceTree = "<group>"; };
 		8E8B62C219329AB300F86215 /* JVEReactiveItemDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JVEReactiveItemDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8B62C519329AB300F86215 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8E8B62C719329AB300F86215 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,6 +116,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E05C9E6193627EC0015ADA6 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				8E8B630A1932A90B00F86215 /* JVEMealGalleryFlowLayout.h */,
+				8E8B630B1932A90B00F86215 /* JVEMealGalleryFlowLayout.m */,
+				8E05C9D31933735A0015ADA6 /* JVEMealListFlowLayout.h */,
+				8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
 		8E8B62B919329AB300F86215 = {
 			isa = PBXGroup;
 			children = (
@@ -146,10 +164,16 @@
 		8E8B62CB19329AB300F86215 /* JVEReactiveItemDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				8E05C9E6193627EC0015ADA6 /* Layouts */,
 				8E8B630E1932B2CF00F86215 /* Model */,
 				8E8B630D1932B2C500F86215 /* ViewModel */,
 				8E8B63061932A75800F86215 /* View */,
 				8E8B62F919329D8400F86215 /* App sources */,
+				8E05C9DF1934BA050015ADA6 /* JVRCollectionViewDataSource.h */,
+				8E05C9E01934BA050015ADA6 /* JVRCollectionViewDataSource.m */,
+				8E05C9E21934BA800015ADA6 /* JVRCellConfiguratorDelegate.h */,
+				8E05C9E31934C4CA0015ADA6 /* JVECellConfigurator.h */,
+				8E05C9E41934C4CA0015ADA6 /* JVECellConfigurator.m */,
 			);
 			path = JVEReactiveItemDownloader;
 			sourceTree = "<group>";
@@ -201,12 +225,8 @@
 				8E8B63041932A66100F86215 /* JVEMealGalleryViewController.m */,
 				8E05C9CD193349E00015ADA6 /* JVEDetailViewController.h */,
 				8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */,
-				8E8B630A1932A90B00F86215 /* JVEMealGalleryFlowLayout.h */,
-				8E8B630B1932A90B00F86215 /* JVEMealGalleryFlowLayout.m */,
 				8E8B63071932A76800F86215 /* JVEMealGalleryCell.h */,
 				8E8B63081932A76800F86215 /* JVEMealGalleryCell.m */,
-				8E05C9D31933735A0015ADA6 /* JVEMealListFlowLayout.h */,
-				8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -395,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E05C9E11934BA050015ADA6 /* JVRCollectionViewDataSource.m in Sources */,
 				8E8B63051932A66100F86215 /* JVEMealGalleryViewController.m in Sources */,
 				8E8B63091932A76800F86215 /* JVEMealGalleryCell.m in Sources */,
 				8E05C9D51933735A0015ADA6 /* JVEMealListFlowLayout.m in Sources */,
@@ -402,6 +423,7 @@
 				8E8B63001932A45F00F86215 /* JVEMealGalleryViewModel.m in Sources */,
 				8E8B62D219329AB300F86215 /* main.m in Sources */,
 				8E8B62F619329D4100F86215 /* JVEMeal.m in Sources */,
+				8E05C9E51934C4CA0015ADA6 /* JVECellConfigurator.m in Sources */,
 				8E8B62FC19329DE900F86215 /* JVEMealProvider.m in Sources */,
 				8E05C9D219334A4D0015ADA6 /* JVEDetailViewModel.m in Sources */,
 				8E8B630C1932A90B00F86215 /* JVEMealGalleryFlowLayout.m in Sources */,

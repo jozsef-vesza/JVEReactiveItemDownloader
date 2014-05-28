@@ -13,6 +13,8 @@
 #import "JVEDetailViewController.h"
 #import "JVEDetailViewModel.h"
 #import "JVEMealListFlowLayout.h"
+#import "JVRCollectionViewDataSource.h"
+#import "JVECellConfigurator.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface JVEMealGalleryViewController ()
@@ -20,6 +22,7 @@
 @property (nonatomic, strong) JVEMealGalleryViewModel *viewModel;
 @property (nonatomic, strong) NSIndexPath *selectedIndexPath;
 @property (nonatomic, assign) BOOL viewMode;
+@property (nonatomic, strong) JVRCollectionViewDataSource *dataSource;
 
 @end
 
@@ -42,55 +45,47 @@ static NSString *CellIdentifier = @"Cell";
     self.title = @"Menu";
     [self.collectionView registerClass:[JVEMealGalleryCell class] forCellWithReuseIdentifier:CellIdentifier];
     
-    __weak JVEMealGalleryViewController *weakSelf = self;
-    [RACObserve(weakSelf.viewModel, model) subscribeNext:^(id x) {
-        __strong JVEMealGalleryViewController *strongSelf = weakSelf;
-        [strongSelf.collectionView reloadData];
+    @weakify(self);
+    [RACObserve(self.viewModel, model) subscribeNext:^(id x) {
+        @strongify(self);
+        if (!self.dataSource.items) {
+            self.dataSource = [JVRCollectionViewDataSource dataSourceForCollectionView:self.collectionView withItems:self.viewModel.model usingCellConfigurator:[[JVECellConfigurator alloc] init]];
+        }
+        
+        [self.collectionView reloadData];
     }];
     
-    [[weakSelf rac_signalForSelector:@selector(collectionView:didSelectItemAtIndexPath:) fromProtocol:@protocol(UICollectionViewDelegate)] subscribeNext:^(RACTuple *arguments) {
-        __strong JVEMealGalleryViewController *strongSelf = weakSelf;
+    [[self rac_signalForSelector:@selector(collectionView:didSelectItemAtIndexPath:) fromProtocol:@protocol(UICollectionViewDelegate)] subscribeNext:^(RACTuple *arguments) {
+        @strongify(self);
         NSIndexPath *indexPath = arguments.second;
-        JVEDetailViewModel *viewModel = [[JVEDetailViewModel alloc] initWithModel:strongSelf.viewModel.model[indexPath.item]];
+        JVEDetailViewModel *viewModel = [[JVEDetailViewModel alloc] initWithModel:self.viewModel.model[indexPath.item]];
         JVEDetailViewController *viewController = [[JVEDetailViewController alloc] initWithViewModel:viewModel];
-        [strongSelf.navigationController pushViewController:viewController animated:YES];
+        [self.navigationController pushViewController:viewController animated:YES];
     }];
     
     self.collectionView.delegate = self;
     
+    
     UIBarButtonItem *rightBarButton = [[UIBarButtonItem alloc] init];
     rightBarButton.title = @"Switch";
     rightBarButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-        __strong JVEMealGalleryViewController *strongSelf = weakSelf;
-        strongSelf.viewMode = !strongSelf.viewMode;
+        @strongify(self);
+        self.viewMode = !self.viewMode;
         return [RACSignal empty];
     }];
     
     self.navigationItem.rightBarButtonItem = rightBarButton;
     
-    [RACObserve(weakSelf, viewMode) subscribeNext:^(id x) {
-        __strong JVEMealGalleryViewController *strongSelf = weakSelf;
+    [RACObserve(self, viewMode) subscribeNext:^(id x) {
+        @strongify(self);
         UICollectionViewLayout *layout;
         if ([x boolValue]) {
             layout = [[JVEMealListFlowLayout alloc] init];
         } else {
             layout = [[JVEMealGalleryFlowLayout alloc] init];
         }
-        [strongSelf.collectionView setCollectionViewLayout:layout animated:YES];
+        [self.collectionView setCollectionViewLayout:layout animated:YES];
     }];
 }
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self.viewModel.model count];
-}
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    JVEMealGalleryCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
-    [cell setMeal:self.viewModel.model[indexPath.row]];
-    
-    return cell;
-}
-
-
 
 @end

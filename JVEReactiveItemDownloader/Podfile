@@ -3,10 +3,9 @@ platform :ios, "7.1"
 target "JVEReactiveItemDownloader" do
 	pod 'ReactiveCocoa'
 	pod 'ReactiveViewModel'
+    pod 'libextobjc'
 end
 
 target "JVEReactiveItemDownloaderTests" do
-    pod 'ReactiveCocoa'
-	pod 'ReactiveViewModel'
 end
 

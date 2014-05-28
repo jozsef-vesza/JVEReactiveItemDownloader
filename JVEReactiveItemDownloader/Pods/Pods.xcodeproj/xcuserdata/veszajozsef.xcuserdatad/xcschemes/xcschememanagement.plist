@@ -14,22 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-JVEReactiveItemDownloader-libextobjc.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JVEReactiveItemDownloader.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-JVEReactiveItemDownloaderTests-ReactiveCocoa.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-JVEReactiveItemDownloaderTests-ReactiveViewModel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-JVEReactiveItemDownloaderTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>10CAEAEB581149C896A3B659</key>
+		<key>47EAB2B590844F9DA0658E5C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1607DDAF05C54B8F9CED55E4</key>
+		<key>7AD96F8504A14351B16DC653</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>184E8C21F2AB4AE5B8CCFFF5</key>
+		<key>AB7762BC85CC40AF8377A58A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D0CE5FF936946BE99347E17</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>555D2237159448138403B06C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7348A8CFDA8B43EAAC3E5037</key>
+		<key>E85F8701FEA04CF9BF298D81</key>
 		<dict>
 			<key>primary</key>
 			<true/>
