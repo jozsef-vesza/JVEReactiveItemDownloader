@@ -4,6 +4,7 @@ target "JVEReactiveItemDownloader" do
 	pod 'ReactiveCocoa'
 	pod 'ReactiveViewModel'
     pod 'libextobjc'
+    pod 'JVRCellConfiguratorDelegate'
 end
 
 target "JVEReactiveItemDownloaderTests" do

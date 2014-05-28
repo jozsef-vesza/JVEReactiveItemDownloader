@@ -56,7 +56,6 @@
 		8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMealListFlowLayout.m; sourceTree = "<group>"; };
 		8E05C9DF1934BA050015ADA6 /* JVRCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRCollectionViewDataSource.h; sourceTree = "<group>"; };
 		8E05C9E01934BA050015ADA6 /* JVRCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVRCollectionViewDataSource.m; sourceTree = "<group>"; };
-		8E05C9E21934BA800015ADA6 /* JVRCellConfiguratorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JVRCellConfiguratorDelegate.h; sourceTree = "<group>"; };
 		8E05C9E31934C4CA0015ADA6 /* JVECellConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVECellConfigurator.h; sourceTree = "<group>"; };
 		8E05C9E41934C4CA0015ADA6 /* JVECellConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVECellConfigurator.m; sourceTree = "<group>"; };
 		8E8B62C219329AB300F86215 /* JVEReactiveItemDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JVEReactiveItemDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,7 +170,6 @@
 				8E8B62F919329D8400F86215 /* App sources */,
 				8E05C9DF1934BA050015ADA6 /* JVRCollectionViewDataSource.h */,
 				8E05C9E01934BA050015ADA6 /* JVRCollectionViewDataSource.m */,
-				8E05C9E21934BA800015ADA6 /* JVRCellConfiguratorDelegate.h */,
 				8E05C9E31934C4CA0015ADA6 /* JVECellConfigurator.h */,
 				8E05C9E41934C4CA0015ADA6 /* JVECellConfigurator.m */,
 			);

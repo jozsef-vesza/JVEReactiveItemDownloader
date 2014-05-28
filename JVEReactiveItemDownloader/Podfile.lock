@@ -1,4 +1,5 @@
 PODS:
+  - JVRCellConfiguratorDelegate (1.0.1)
   - libextobjc (0.4):
     - libextobjc/EXTADT
     - libextobjc/EXTConcreteProtocol
@@ -45,11 +46,13 @@ PODS:
     - ReactiveCocoa (~> 2.1)
 
 DEPENDENCIES:
+  - JVRCellConfiguratorDelegate
   - libextobjc
   - ReactiveCocoa
   - ReactiveViewModel
 
 SPEC CHECKSUMS:
+  JVRCellConfiguratorDelegate: cc7f8652b86142953b18c81c26cf4dc95f10ed75
   libextobjc: ba42e4111f433273a886cd54f0ddaddb7f62f82f
   ReactiveCocoa: 2066583826c17dde8e90c41e489f682048cc57c9
   ReactiveViewModel: 78387196df2e7535bb2776c41df15dbb17300f8a

@@ -1,0 +1,1 @@
+../../JVRCellConfiguratorDelegate/JVRCellConfiguratorDelegate.h

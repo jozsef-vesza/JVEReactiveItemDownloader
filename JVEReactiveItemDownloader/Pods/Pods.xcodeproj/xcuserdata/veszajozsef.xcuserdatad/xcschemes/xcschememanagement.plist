@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-JVEReactiveItemDownloader-JVRCellConfiguratorDelegate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JVEReactiveItemDownloader-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>47EAB2B590844F9DA0658E5C</key>
+		<key>35CF94FFEEA34E19B30A4C0E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7AD96F8504A14351B16DC653</key>
+		<key>42166C32F11E44E2B7BDDF86</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB7762BC85CC40AF8377A58A</key>
+		<key>58FE332ED8F543928E1C920F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E85F8701FEA04CF9BF298D81</key>
+		<key>83FE397BE362414B81D0CFCD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A393BADD0A6042E287CB01FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
