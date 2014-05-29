@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 @protocol JVRCellConfiguratorDelegate;
 
+/**
+ *  A reusable class that encapsulates logic found in the UICollectionViewDataSource protocol methods. It additionally requires an object conforming to JVRCellConfiguratorDelegate protocol, which will handle cell customizations.
+ */
+
 @interface JVRCollectionViewDataSource : NSObject <UICollectionViewDataSource>
 
 /**

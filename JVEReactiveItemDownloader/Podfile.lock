@@ -1,5 +1,7 @@
 PODS:
-  - JVRCellConfiguratorDelegate (1.0.1)
+  - JVRCellConfiguratorDelegate (1.0.2)
+  - JVRCollectionViewDataSource (1.0.2):
+    - JVRCellConfiguratorDelegate
   - libextobjc (0.4):
     - libextobjc/EXTADT
     - libextobjc/EXTConcreteProtocol
@@ -35,26 +37,27 @@ PODS:
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4)
   - libextobjc/UmbrellaHeader (0.4)
-  - ReactiveCocoa (2.3):
+  - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI
-  - ReactiveCocoa/Core (2.3):
+  - ReactiveCocoa/Core (2.3.1):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.3)
-  - ReactiveCocoa/UI (2.3):
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
     - ReactiveCocoa/Core
   - ReactiveViewModel (0.2):
     - ReactiveCocoa (~> 2.1)
 
 DEPENDENCIES:
-  - JVRCellConfiguratorDelegate
+  - JVRCollectionViewDataSource
   - libextobjc
   - ReactiveCocoa
   - ReactiveViewModel
 
 SPEC CHECKSUMS:
-  JVRCellConfiguratorDelegate: cc7f8652b86142953b18c81c26cf4dc95f10ed75
+  JVRCellConfiguratorDelegate: 09a6190b54ea53fbde0d0e595b0315c6e5b87c74
+  JVRCollectionViewDataSource: 51992fbe0b6c7696e21d1f4562060304320b1e62
   libextobjc: ba42e4111f433273a886cd54f0ddaddb7f62f82f
-  ReactiveCocoa: 2066583826c17dde8e90c41e489f682048cc57c9
+  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
   ReactiveViewModel: 78387196df2e7535bb2776c41df15dbb17300f8a
 
 COCOAPODS: 0.33.1

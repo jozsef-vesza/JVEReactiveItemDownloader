@@ -11,7 +11,6 @@
 		8E05C9CF193349E00015ADA6 /* JVEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9CE193349E00015ADA6 /* JVEDetailViewController.m */; };
 		8E05C9D219334A4D0015ADA6 /* JVEDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9D119334A4D0015ADA6 /* JVEDetailViewModel.m */; };
 		8E05C9D51933735A0015ADA6 /* JVEMealListFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */; };
-		8E05C9E11934BA050015ADA6 /* JVRCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9E01934BA050015ADA6 /* JVRCollectionViewDataSource.m */; };
 		8E05C9E51934C4CA0015ADA6 /* JVECellConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E05C9E41934C4CA0015ADA6 /* JVECellConfigurator.m */; };
 		8E8B62C619329AB300F86215 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C519329AB300F86215 /* Foundation.framework */; };
 		8E8B62C819329AB300F86215 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8B62C719329AB300F86215 /* CoreGraphics.framework */; };
@@ -54,8 +53,6 @@
 		8E05C9D119334A4D0015ADA6 /* JVEDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEDetailViewModel.m; sourceTree = "<group>"; };
 		8E05C9D31933735A0015ADA6 /* JVEMealListFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVEMealListFlowLayout.h; sourceTree = "<group>"; };
 		8E05C9D41933735A0015ADA6 /* JVEMealListFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVEMealListFlowLayout.m; sourceTree = "<group>"; };
-		8E05C9DF1934BA050015ADA6 /* JVRCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVRCollectionViewDataSource.h; sourceTree = "<group>"; };
-		8E05C9E01934BA050015ADA6 /* JVRCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVRCollectionViewDataSource.m; sourceTree = "<group>"; };
 		8E05C9E31934C4CA0015ADA6 /* JVECellConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVECellConfigurator.h; sourceTree = "<group>"; };
 		8E05C9E41934C4CA0015ADA6 /* JVECellConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVECellConfigurator.m; sourceTree = "<group>"; };
 		8E8B62C219329AB300F86215 /* JVEReactiveItemDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JVEReactiveItemDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,8 +165,6 @@
 				8E8B630D1932B2C500F86215 /* ViewModel */,
 				8E8B63061932A75800F86215 /* View */,
 				8E8B62F919329D8400F86215 /* App sources */,
-				8E05C9DF1934BA050015ADA6 /* JVRCollectionViewDataSource.h */,
-				8E05C9E01934BA050015ADA6 /* JVRCollectionViewDataSource.m */,
 				8E05C9E31934C4CA0015ADA6 /* JVECellConfigurator.h */,
 				8E05C9E41934C4CA0015ADA6 /* JVECellConfigurator.m */,
 			);
@@ -413,7 +408,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E05C9E11934BA050015ADA6 /* JVRCollectionViewDataSource.m in Sources */,
 				8E8B63051932A66100F86215 /* JVEMealGalleryViewController.m in Sources */,
 				8E8B63091932A76800F86215 /* JVEMealGalleryCell.m in Sources */,
 				8E05C9D51933735A0015ADA6 /* JVEMealListFlowLayout.m in Sources */,

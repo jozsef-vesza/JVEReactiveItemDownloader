@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-JVEReactiveItemDownloader-JVRCollectionViewDataSource.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JVEReactiveItemDownloader-ReactiveCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>35CF94FFEEA34E19B30A4C0E</key>
+		<key>044A0DC1BFE44714BB5A96B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>42166C32F11E44E2B7BDDF86</key>
+		<key>13D7A785DA96426FBDC14282</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58FE332ED8F543928E1C920F</key>
+		<key>5A70876DFB41411F9703C78E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83FE397BE362414B81D0CFCD</key>
+		<key>6A0820A6FF484504A4332104</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A393BADD0A6042E287CB01FD</key>
+		<key>9C0D6012A49C408FB0B9D6F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EAF9D300973C447CB58B42D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

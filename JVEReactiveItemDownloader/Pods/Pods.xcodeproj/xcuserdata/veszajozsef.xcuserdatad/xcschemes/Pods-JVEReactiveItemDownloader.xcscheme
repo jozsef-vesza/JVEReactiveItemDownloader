@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "58FE332ED8F543928E1C920F"
+               BlueprintIdentifier = "13D7A785DA96426FBDC14282"
                BuildableName = "libPods-JVEReactiveItemDownloader.a"
                BlueprintName = "Pods-JVEReactiveItemDownloader"
                ReferencedContainer = "container:Pods.xcodeproj">
